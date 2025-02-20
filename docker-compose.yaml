@@ -1,0 +1,9 @@
+version: '3'
+services:
+  keep_awake:
+    build: .
+    container_name: keep_awake
+    restart: always
+    privileged: true
+    devices:
+      - "/dev/input:/dev/input"
